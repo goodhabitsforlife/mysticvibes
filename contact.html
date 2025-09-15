@@ -1,13 +1,12 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — MysticVibes</title>
-  <meta name="description" content="Reach MysticVibes for suggestions, collaboration, or to report a bug.">
-  <meta property="og:title" content="Contact — MysticVibes">
-  <meta property="og:description" content="Reach MysticVibes for suggestions, collaboration, or to report a bug.">
+  <title>Contact — Vinitaa Bakshi | MysticVibes</title>
+  <meta name="description" content="Contact Numerologist Vinitaa Bakshi — call, WhatsApp, or email. Serving Malad West, Mumbai (Jankalyan Nagar / Marve Road).">
+  <meta property="og:title" content="Contact — Vinitaa Bakshi | MysticVibes">
+  <meta property="og:description" content="Call or WhatsApp to book a numerology consultation. Malad West, Mumbai.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="hero1.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +14,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vinitaa Bakshi",
+    "url": "https://mysticvibes.in/",
+    "image": "hero1.jpg",
+    "jobTitle": "Numerologist",
+    "areaServed": "Mumbai",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Malad West",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN",
+      "streetAddress": "Jankalyan Nagar, Marve Road"
+    },
+    "telephone": ["+91-98197-03121"]
+  }
+  </script>
+  <style>
+    .contact-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:18px 0}
+    .c-card{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(0,0,0,.05));border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:16px}
+    .c-title{font-weight:700;margin:0 0 6px}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent2),var(--accent));color:white;text-decoration:none;border:1px solid rgba(0,0,0,.12)}
+    .muted{color:var(--muted);font-size:14px}
+  </style>
 </head>
 <body>
 <nav class="nav">
@@ -29,7 +55,7 @@
       <a href="name-numbers.html">Name Numbers</a>
       <a href="compatibility.html">Compatibility</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a class="active" href="contact.html">Contact</a>
     </div>
     <div class="theme-toggle">
       <button id="themeToggle" class="toggle-btn" type="button">Toggle Theme</button>
@@ -39,22 +65,48 @@
 
 <header class="hero">
   <div class="container">
-    <h1>Contact</h1>
-    <p class="lead">Questions or suggestions? Say hi. For quick fixes, open your HTML file and edit — this site is plain, portable code.</p>
+    <h1>Contact Vinitaa Bakshi</h1>
+    <p class="lead">Book a numerology session or ask a quick question. Located in <strong>Malad West, Mumbai</strong> (Jankalyan Nagar / Marve Road). <span class="muted">Open until 9:00 pm*</span></p>
+    <img src="img2.png" alt="MysticVibes orange artwork" style="width:100%;max-width:920px;border-radius:16px;margin:16px auto;display:block;border:1px solid rgba(0,0,0,.08)">
   </div>
 </header>
 
 <div class="container">
+  <section class="contact-cards">
+    <div class="c-card">
+      <h3 class="c-title">Call</h3>
+      <div><a href="tel:+9819703121">+91 98197 03121</a></div>
+      <div class="btnrow">
+        <a class="btn" href="tel:+919819703121">Call Now</a>
+        <a class="btn" href="https://wa.me/919819703121" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="muted">5.0 ★ (38 reviews) — Fees from ₹1,500</div>
+    </div>
+
+    <div class="c-card">
+      <h3 class="c-title">Visit (By Appointment)</h3>
+      <div>Jankalyan Nagar, <br>Marve Road, Malad West, Mumbai</div>
+      <div class="muted">Landmark & directions shared upon confirmation.</div>
+      <div class="btnrow">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Jankalyan+Nagar+Marve+Road+Malad+West+Mumbai" target="_blank" rel="noopener">Open in Maps</a>
+      </div>
+    </div>
+
+      </section>
+
   <section class="form">
-    <h2>Write to us</h2>
+    <h2>Quick Message</h2>
     <label for="name">Your name</label>
     <input id="name" placeholder="Your name">
     <label for="email">Your email</label>
     <input id="email" type="email" placeholder="you@example.com">
     <label for="msg">Message</label>
-    <textarea id="msg" rows="5" placeholder="Your message"></textarea>
-    <a href="mailto:hello@mysticvibes.in" onclick="this.href='mailto:hello@mysticvibes.in?subject=MysticVibes%20Contact&body=' + encodeURIComponent(document.getElementById('msg').value)" class="button" style="display:inline-block;margin-top:12px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent2),var(--accent));color:white;border:1px solid rgba(0,0,0,.12);text-decoration:none;">Send via Email</a>
+    <textarea id="msg" rows="5" placeholder="How can we help?"></textarea>
+    <a href="mailto:hello@mysticvibes.in" onclick="this.href='mailto:hello@mysticvibes.in?subject=MysticVibes%20Contact&body=' + encodeURIComponent(document.getElementById('msg').value)" class="btn">Send via Email</a>
   </section>
+
+  <p class="small">*Hours/fees and phone numbers are based on public listings and may change. Please confirm when booking.</p>
+  <p class="small">Source: public listing on Justdial for “Numerologist Vinitaa Bakshi, Malad West, Mumbai”.</p>
 </div>
 
 <footer class="footer">
@@ -63,5 +115,5 @@
   </div>
 </footer>
 <script src="script.js"></script>
-</body></html>
-
+</body>
+</html>
