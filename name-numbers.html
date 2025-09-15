@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Name Numbers — MysticVibes</title>
+  <meta name="description" content="Calculate Expression, Soul Urge, and Personality numbers from your name using Pythagorean numerology.">
+  <meta property="og:title" content="Name Numbers — MysticVibes">
+  <meta property="og:description" content="Calculate Expression, Soul Urge, and Personality numbers from your name using Pythagorean numerology.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero1.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="logo"></div>
+      <span>MysticVibes.in</span>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="life-path.html">Life Path</a>
+      <a href="name-numbers.html">Name Numbers</a>
+      <a href="compatibility.html">Compatibility</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="theme-toggle">
+      <button id="themeToggle" class="toggle-btn" type="button">Toggle Theme</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Name Numbers</h1>
+    <p class="lead">Using the Pythagorean system (A=1 … Z=26 mapped to 1–9), explore three name numbers: <strong>Expression</strong> (full name), <strong>Soul Urge</strong> (vowels), and <strong>Personality</strong> (consonants).</p>
+    <img src="hero2.jpg" alt="Orange burst artwork" style="width:100%;max-width:920px;border-radius:16px;margin:16px auto;display:block;border:1px solid rgba(0,0,0,.08)">
+  </div>
+</header>
+
+<div class="container">
+  <section class="form">
+    <h2>Name Calculator</h2>
+    <label for="fullname">Enter your full name (as used most often)</label>
+    <input id="fullname" type="text" placeholder="e.g., Dheeraj Issar">
+    <label><input id="keepMasters2" type="checkbox" checked> Keep master numbers (11, 22, 33)</label>
+    <button onclick="calcNameNumbers()">Calculate</button>
+    <div id="nameOut" class="output">Your results will show here.</div>
+  </section>
+
+  <section>
+    <h2>Pythagorean Mapping</h2>
+    <p>Letters map to repeating cycles of 1–9 (A=1, B=2, … I=9, J=1, K=2, …). Diacritics are simplified to base letters. For Soul Urge (vowels), treat Y as a vowel <em>when it sounds like one</em>; otherwise it counts as a consonant.</p>
+    <table>
+      <thead><tr><th>Number</th><th>Expression (Full Name)</th><th>Soul Urge (Vowels)</th><th>Personality (Consonants)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Leadership, initiative</td><td>Independence, directness</td><td>Confident, straightforward</td></tr>
+        <tr><td>2</td><td>Cooperation, harmony</td><td>Sensitivity, empathy</td><td>Gentle, diplomatic</td></tr>
+        <tr><td>3</td><td>Creativity, talkative</td><td>Joy, expression</td><td>Charming, witty</td></tr>
+        <tr><td>4</td><td>Order, reliability</td><td>Security, stability</td><td>Practical, grounded</td></tr>
+        <tr><td>5</td><td>Freedom, variety</td><td>Adventure, change</td><td>Dynamic, curious</td></tr>
+        <tr><td>6</td><td>Care, responsibility</td><td>Love, aesthetics</td><td>Warm, supportive</td></tr>
+        <tr><td>7</td><td>Study, depth</td><td>Truth, introspection</td><td>Reserved, insightful</td></tr>
+        <tr><td>8</td><td>Ambition, management</td><td>Achievement, influence</td><td>Authoritative, strategic</td></tr>
+        <tr><td>9</td><td>Service, wisdom</td><td>Compassion, ideals</td><td>Worldly, generous</td></tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2025 MysticVibes.in — Numerology for everyday clarity</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
+

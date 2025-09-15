@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life Path Number — MysticVibes</title>
+  <meta name="description" content="Calculate your Life Path number from your date of birth and read concise meanings for each path.">
+  <meta property="og:title" content="Life Path Number — MysticVibes">
+  <meta property="og:description" content="Calculate your Life Path number from your date of birth and read concise meanings for each path.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero1.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="logo"></div>
+      <span>MysticVibes.in</span>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="life-path.html">Life Path</a>
+      <a href="name-numbers.html">Name Numbers</a>
+      <a href="compatibility.html">Compatibility</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="theme-toggle">
+      <button id="themeToggle" class="toggle-btn" type="button">Toggle Theme</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Life Path Number</h1>
+    <p class="lead">Your Life Path distills your birthday (DD/MM/YYYY) to a single digit — sometimes kept as a master number 11, 22, or 33. It reflects the <em>style</em> you bring to life.</p>
+    <img src="geometry.jpg" alt="Sacred geometry orange artwork" style="width:100%;max-width:920px;border-radius:16px;margin:16px auto;display:block;border:1px solid rgba(0,0,0,.08)">
+  </div>
+</header>
+
+<div class="container">
+  <section class="form">
+    <h2>Quick Calculator</h2>
+    <label for="dob">Enter your birth date</label>
+    <input id="dob" type="date" placeholder="YYYY-MM-DD">
+    <label><input id="keepMasters" type="checkbox" checked> Keep master numbers (11, 22, 33)</label>
+    <button onclick="calcLifePath()">Calculate</button>
+    <div id="lifePathOut" class="output">Your result will appear here.</div>
+  </section>
+
+  <section>
+    <h2>How it’s calculated</h2>
+    <p>Add all the digits of your birth date. If the sum is more than one digit, keep adding until you get 1–9. If you’re using master numbers, stop if you hit 11, 22, or 33.</p>
+    <p><strong>Example:</strong> 14 July 1992 → 1+4+0+7+1+9+9+2 = 33 → keep 33 (master) or reduce 3+3 = 6.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card"><div class="content"><h3>1 — The Initiator</h3><p>Self-starter, courageous, decisive. Growth: collaborate, listen actively.</p></div></article>
+    <article class="card"><div class="content"><h3>2 — The Partner</h3><p>Diplomatic, cooperative, intuitive. Growth: set boundaries and voice needs.</p></div></article>
+    <article class="card"><div class="content"><h3>3 — The Creator</h3><p>Expressive, playful, communicative. Growth: follow-through and structure.</p></div></article>
+    <article class="card"><div class="content"><h3>4 — The Builder</h3><p>Grounded, organized, dependable. Growth: flexibility and openness to change.</p></div></article>
+    <article class="card"><div class="content"><h3>5 — The Explorer</h3><p>Curious, adventurous, adaptable. Growth: consistency and mindful risk.</p></div></article>
+    <article class="card"><div class="content"><h3>6 — The Nurturer</h3><p>Caring, aesthetic, responsible. Growth: avoid over-giving; keep personal projects alive.</p></div></article>
+    <article class="card"><div class="content"><h3>7 — The Seeker</h3><p>Analytical, spiritual, observant. Growth: share findings; trust connection.</p></div></article>
+    <article class="card"><div class="content"><h3>8 — The Strategist</h3><p>Ambitious, resource-savvy, executive. Growth: align power with purpose.</p></div></article>
+    <article class="card"><div class="content"><h3>9 — The Humanitarian</h3><p>Compassionate, wise, global. Growth: boundaries and practical action.</p></div></article>
+    <article class="card"><div class="content"><h3>11 — The Visionary</h3><p>Highly intuitive, inspiring. Growth: ground vision into daily practice.</p></div></article>
+    <article class="card"><div class="content"><h3>22 — The Master Builder</h3><p>Scale, structure, impact. Growth: patience and ethical stewardship.</p></div></article>
+    <article class="card"><div class="content"><h3>33 — The Teacher</h3><p>Service, compassion, creative healing. Growth: self-care and realistic scope.</p></div></article>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2025 MysticVibes.in — Numerology for everyday clarity</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
+

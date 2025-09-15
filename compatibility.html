@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compatibility — MysticVibes</title>
+  <meta name="description" content="View a quick guide to compatibility patterns between Life Path numbers — a conversation starter, not a verdict.">
+  <meta property="og:title" content="Compatibility — MysticVibes">
+  <meta property="og:description" content="View a quick guide to compatibility patterns between Life Path numbers — a conversation starter, not a verdict.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero1.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="logo"></div>
+      <span>MysticVibes.in</span>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="life-path.html">Life Path</a>
+      <a href="name-numbers.html">Name Numbers</a>
+      <a href="compatibility.html">Compatibility</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="theme-toggle">
+      <button id="themeToggle" class="toggle-btn" type="button">Toggle Theme</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Compatibility</h1>
+    <p class="lead">Numbers don’t decide your story — you do. But they can highlight friction points and flow states. Use this as a talk-starter.</p>
+    <img src="hero1.jpg" alt="Numerology hero orange" style="width:100%;max-width:920px;border-radius:16px;margin:16px auto;display:block;border:1px solid rgba(0,0,0,.08)">
+  </div>
+</header>
+
+<div class="container">
+  <section>
+    <h2>Quick Patterns</h2>
+    <p>Pairs with shared values or complementary strengths often feel natural. Challenging pairs can still thrive with clarity and care.</p>
+    <table>
+      <thead><tr><th>Pair</th><th>Why it flows</th><th>Watch for</th></tr></thead>
+      <tbody>
+        <tr><td>1 & 3</td><td>Drive meets creativity</td><td>Ego clashes; listen turns</td></tr>
+        <tr><td>2 & 6</td><td>Care + harmony</td><td>Over-giving; boundaries</td></tr>
+        <tr><td>4 & 8</td><td>Structure + ambition</td><td>Work/life balance</td></tr>
+        <tr><td>5 & 7</td><td>Curiosity + depth</td><td>Different social needs</td></tr>
+        <tr><td>3 & 5</td><td>Fun, variety, ideas</td><td>Consistency and plans</td></tr>
+        <tr><td>9 & 2</td><td>Compassion + empathy</td><td>Decision paralysis</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="form">
+    <h2>Try Your Pair</h2>
+    <label for="dobA">Your birth date</label>
+    <input id="dobA" type="date">
+    <label for="dobB">Partner/friend birth date</label>
+    <input id="dobB" type="date">
+    <label><input id="keepMasters3" type="checkbox" checked> Keep master numbers (11/22/33)</label>
+    <button onclick="calcPair()">Check</button>
+    <div id="pairOut" class="output">Enter both dates and hit Check.</div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2025 MysticVibes.in — Numerology for everyday clarity</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body></html>
+
